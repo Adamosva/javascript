@@ -1,0 +1,176 @@
+<html>
+
+    <head>
+        
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Simple Layout Demo</title>
+        <link rel="stylesheet" type="text/css" href="layoutResponsive.css"></link>
+        <link rel="stylesheet" type="text/css" href="navlayout.css"></link>
+    </head>
+    
+    <body>
+        <div class="header">This is My Page</div>
+        <div class="navbar">
+            <a href="Index.html">Main Hub Page</a>
+            <div class="dropmenu">
+                <button class="dmbutton"></button>>
+                <div class="dropmenucontent">
+                    <a href="question.html">questionaire</a>
+                    <a href="https://adamosva.github.io/java/">github</a>
+                </div>
+            </div>
+            <a  href="Other.html">info</a>
+        </div>
+        <div class="maincontainer">
+            <h2>JavaScript Alert,confirm and prompt box</h2>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  alert("This is an alert box");
+}
+</script>
+<h2>Redirect to a Webpage</h2>
+<p>The replace() method replaces the current site with a new one:</p>
+
+<button onclick="myFunction()">Replace site</button>
+
+<script>
+function myFunction() {
+  location.replace("https://www.w3schools.com")
+}
+</script>
+
+
+<p>The appName property returns the application name of the browser:</p>
+
+<p id="demo"></p>
+
+
+
+<script>
+document.getElementById("demo").innerHTML = 
+"navigator.appName is " + navigator.appName;
+</script>
+
+
+
+            <div>
+                
+
+             
+                 </div>
+            <div class="leftcol"> 
+                <h4>JavaScript Can Validate Input using numbers</h4>
+
+                <p>Please input a number between 30 and 50:</p>
+                
+                <input id="numb">
+                
+                <button type="button" onclick="myFunction()">Submit</button>
+                
+                <p id="demo2"> </p>
+                
+                <script>
+                function myFunction() {
+                  var x, text;
+                
+                  // Get the value of the input field with id="numb"
+                  x = document.getElementById("numb").value;
+                
+                 
+                  if (isNaN(x) || x < 1 || x > 10) {
+                    text = "Input not valid";
+                  } else {
+                    text = "Input OK";
+                  }
+                  document.getElementById("demo2").innerHTML = text;
+                }
+                </script>
+                
+           
+            </div>
+           
+            <div class="maincontent" >    
+                
+</script>
+
+<p> javascript depends heavily on object oriented programing almost everything in javascript can be objects
+Boolean values could a object once given the new keyword
+Number values could a object once given the new keyword
+String values could a object once given the new keyword
+Dates are objects 
+Maths is an object
+Regular expressions are also objects
+Arrays are always objects
+Functions are objects
+all javascript values except can be objects 
+javascript can also be used to react to events for example some input event java script can react to the 
+mouse leaving an input element this is kown as onblur and make a change once it has it also can alter something 
+if text is selected and is known as onselect.
+JavaScript methods are actions that can be performed on objects.
+A JavaScript method is a property containing a function definition.
+</p>
+
+
+
+
+</div>
+            <div class="rightcol">
+                <p>
+
+                </p>
+                <script>
+                    function setCookie(cname,cvalue,exdays) {
+                      var d = new Date();
+                      d.setTime(d.getTime() + (exdays*24*60*60*1000));
+                      var expires = "expires=" + d.toGMTString();
+                      document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+                    }
+                    
+                    function getCookie(cname) {
+                      var name = cname + "=";
+                      var decodedCookie = decodeURIComponent(document.cookie);
+                      var ca = decodedCookie.split(';');
+                      for(var i = 0; i < ca.length; i++) {
+                        var c = ca[i];
+                        while (c.charAt(0) == ' ') {
+                          c = c.substring(1);
+                        }
+                        if (c.indexOf(name) == 0) {
+                          return c.substring(name.length, c.length);
+                        }
+                      }
+                      return "";
+                    }
+                    
+                    function checkCookie() {
+                      var user=getCookie("username");
+                      if (user != "") {
+                        alert("Welcome again " + user);
+                      } else {
+                         user = prompt("Please enter your name:","");
+                         if (user != "" && user != null) {
+                           setCookie("username", user, 30);
+                         }
+                      }
+                    }
+                    </script>
+                    </head>
+                    
+                    <body onload="checkCookie()"></body>
+                    <p>many diffrent JavaScript security issues have gained attention. one such example is, the way JavaScript 
+                        interacts with the DOM poses a risk for end users by enabling malicious actors to send scripts over the web and 
+                        run them on other computers. There are two measures that can be taken to block this JavaScript security risk. 
+                        First is known as sandboxing which is where you run code, observe and analyze the code in a safe environment 
+                        on a network that mimics client user operating environments. The second measure is implementing the same origin 
+                        policy, which stops scripts from a site from accessing data that is used by scripts form another site.</p>      
+            </div>
+      
+        </div>
+        <div class="footer">theres nothing here too see</div>
+
+    </body>
+</html>
